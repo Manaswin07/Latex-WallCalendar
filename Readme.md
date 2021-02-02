@@ -1,5 +1,5 @@
 #  Readme
-Added additional features to code by profound labs https://github.com/profound-labs/wallcalendar
+Based on wallcalendar by profound labs https://github.com/profound-labs/wallcalendar
 
 ## Features:
 1. Can include a customized background image and a common footer image.
