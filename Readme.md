@@ -1,4 +1,9 @@
 #  Readme
+Added additional features to code by profound labs https://github.com/profound-labs/wallcalendar
+
+## Features:
+1. Can include a customized background image and a common footer image.
+2. Ability to load data from a .csv file
 
 ## Prerequisites:
 
