@@ -1,5 +1,5 @@
 #  Readme
-Based on wallcalendar by profound labs https://github.com/profound-labs/wallcalendar
+Based on latex-calgen by simu https://github.com/simu/latex-calgen
 
 ## Features:
 1. Can include a customized background image and a common footer image.
