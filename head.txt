@@ -1,0 +1,65 @@
+\documentclass{scrreprt}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{float}
+\usepackage[english]{babel}
+\usepackage[a2paper,portrait,margin=0 in]{geometry}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{setspace}
+\renewcommand*\familydefault{\sfdefault}
+
+% setup for A4
+\pagestyle{empty}
+
+% highlight color for the sunday column
+\definecolor{socol}{rgb}{1.0,0,0}
+\definecolor{special}{rgb}{0,0,0}
+
+% don't change the following two lines if you want to use
+% one of the predefined headings.
+\newsavebox\TBox
+\sbox\TBox{%year%}
+
+% month heading design
+\newcommand{\monthhead}[2]{%
+{\resizebox{!}{\wd\TBox}{%
+#1} \hfill \resizebox{!}{\wd\TBox}{#2} \hspace{10mm}\\[5mm]}}
+
+
+%% alternate month heading design, uncomment this
+%\newcommand{\monthhead}[2]{%
+%\begin{flushright}\rotatebox{90}{#2}\hspace{3mm}%
+%\resizebox{!}{\wd\TBox}{#1}%
+%\end{flushright}}
+
+\newcolumntype{D}[1]{>{\raggedright\arraybackslash}p{3.5cm}|}
+
+\newcommand{\lastimage}[1]{
+\begin{figure}[!b]
+\includegraphics[width=\linewidth,height=2in]{#1}
+\end{figure}
+\newpage
+}
+
+\newenvironment{calmonth}[3]{
+\begin{figure}[t]
+\includegraphics[width=\linewidth,height=8.5in]{#3}
+\end{figure}
+\monthhead{#1}{#2}
+\table[!h]
+\centering
+\large
+\tabularx{0.98\linewidth}{|X|X|X|X|X|X|X|}}
+{\endtabularx
+\endtable
+}
+
+\begin{document}
+
+
+
