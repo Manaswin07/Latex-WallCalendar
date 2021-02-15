@@ -2,8 +2,9 @@
 Based on latex-calgen by simu https://github.com/simu/latex-calgen
 
 ## Features:
-1. Can include a customized background image and a common footer image.
-2. Ability to load data from a .csv file
+1. Has an easy to work with GUI.
+2. Can include a customized background image and a common footer image.
+3. Ability to load data from a .csv file
 
 ## Prerequisites:
 
